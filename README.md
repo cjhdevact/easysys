@@ -1,4 +1,4 @@
-#EasySys 
+EasySys 
 ----------
 
 EasySys 是一个系统优化辅助工具。  
