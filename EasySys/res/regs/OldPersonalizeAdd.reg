@@ -1,0 +1,64 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize]
+@=hex(2):00,00
+"HideInSafeMode"=""
+"Icon"=hex(2):25,00,73,00,79,00,73,00,74,00,65,00,6d,00,72,00,6f,00,6f,00,74,\
+  00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,74,00,\
+  68,00,65,00,6d,00,65,00,63,00,70,00,6c,00,2e,00,64,00,6c,00,6c,00,2c,00,2d,\
+  00,31,00,00,00
+"Position"="Bottom"
+"SubCommands"=""
+"MUIVerb"="个性化 (控制面板)"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell]
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\01Personalize]
+"Icon"="%systemroot%\\system32\\themecpl.dll,-1"
+"MUIVerb"="个性化"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\01Personalize\Command]
+@="explorer.exe shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\02DesktopBackground]
+"Icon"="imageres.dll,-110"
+"MUIVerb"="桌面背景"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\02DesktopBackground\Command]
+@="explorer.exe shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921} -Microsoft.Personalization\\pageWallpaper"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\03Color]
+"Icon"="themecpl.dll"
+"MUIVerb"="颜色"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\03Color\Command]
+@="explorer.exe shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921} -Microsoft.Personalization\\pageColorization"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\04Sounds]
+"Icon"="mmsys.cpl"
+"MUIVerb"="声音"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\04Sounds\Command]
+@="rundll32.exe shell32.dll,Control_RunDLL mmsys.cpl ,2"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\05Screen Saver]
+"Icon"="PhotoScreensaver.scr"
+"MUIVerb"="屏幕保护程序"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\05Screen Saver\Command]
+@="rundll32.exe shell32.dll,Control_RunDLL desk.cpl,screensaver,@screensaver"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\06DesktopIcons]
+"Icon"="desk.cpl"
+"MUIVerb"="更改桌面图标"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\06DesktopIcons\Command]
+@="rundll32 shell32.dll,Control_RunDLL desk.cpl,,0"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\07Cursors]
+"Icon"="main.cpl"
+"MUIVerb"="更改鼠标指针"
+
+[HKEY_CLASSES_ROOT\DesktopBackground\Shell\OldPersonalize\shell\07Cursors\Command]
+@="rundll32.exe shell32.dll,Control_RunDLL main.cpl,,1"
+
